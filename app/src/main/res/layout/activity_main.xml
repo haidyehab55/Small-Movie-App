@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="@drawable/cinema"
+    android:gravity="center">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pervasive Cinema!"
+        android:textSize="30dp"
+        android:textColor="@color/white"
+        android:fontFamily="cursive"
+        android:layout_marginBottom="25dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="4"
+        android:layout_margin="15dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Movie Name"
+        android:layout_weight="1"
+        android:textColor="@color/white"
+        android:textSize="15dp"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:background="@drawable/edit_text_boarder"
+        android:textSize="15dp"
+        android:textColor="@color/white"
+        android:padding="8dp"
+        android:id="@+id/Name"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="4"
+        android:layout_margin="15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           android:text="Description"
+            android:layout_weight="1"
+            android:textSize="15dp"
+            android:textColor="@color/white"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:background="@drawable/edit_text_boarder"
+        android:textSize="15dp"
+        android:textColor="@color/white"
+        android:padding="8dp"
+        android:id="@+id/Desc" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_marginTop="20dp">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/button_boarder"
+            android:layout_margin="15dp"
+            android:text="Add Movie"
+            android:id="@+id/Add"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@drawable/button_boarder"
+        android:layout_margin="15dp"
+        android:text="Show Movie"
+        android:id="@+id/Show"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>
